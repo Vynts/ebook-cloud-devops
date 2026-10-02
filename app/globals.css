@@ -24,3 +24,137 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.markdown-content {
+  min-width: 0;
+  color: #f8fafc;
+  line-height: 1.8;
+}
+
+.markdown-content :where(h1, h2, h3, p, li, blockquote) {
+  overflow-wrap: anywhere;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+  color: #f8fafc;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.markdown-content h1 {
+  margin: 0 0 2rem;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 1rem;
+  font-size: clamp(1.65rem, 5vw, 2rem);
+}
+
+.markdown-content h2 {
+  margin: 2.5rem 0 1rem;
+  border-bottom: 1px solid #1e293b99;
+  padding-bottom: 0.5rem;
+  color: #38bdf8;
+  font-size: clamp(1.3rem, 4vw, 1.5rem);
+}
+
+.markdown-content h3 {
+  margin: 2rem 0 0.75rem;
+  font-size: 1.25rem;
+}
+
+.markdown-content p {
+  margin: 0 0 1.5rem;
+  text-align: justify;
+  line-height: 1.9;
+}
+
+.markdown-content strong {
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin: 0 0 1.5rem;
+  padding-left: 1.5rem;
+  list-style-position: outside;
+}
+
+.markdown-content ul {
+  list-style-type: disc;
+}
+
+.markdown-content ol {
+  list-style-type: decimal;
+}
+
+.markdown-content ul ul {
+  list-style-type: circle;
+}
+
+.markdown-content ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-content li {
+  margin-bottom: 0.5rem;
+}
+
+.markdown-content li::marker {
+  color: #f8fafc;
+}
+
+.markdown-content a {
+  color: #38bdf8;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.markdown-content code {
+  overflow-wrap: anywhere;
+}
+
+.markdown-content pre {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 0 1.5rem;
+  border: 1px solid #1e293b;
+  border-radius: 0.5rem;
+  padding: clamp(0.75rem, 3vw, 1rem);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.markdown-content pre code {
+  white-space: inherit;
+}
+
+.markdown-content table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.markdown-content th,
+.markdown-content td {
+  border: 1px solid #334155;
+  padding: clamp(0.35rem, 2vw, 0.75rem);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.markdown-content th {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.markdown-content hr {
+  margin: 2rem 0;
+  border-color: #1e293b;
+}

@@ -1,6 +1,6 @@
-import { notFound } from "next/navigation";
-import ChapterContent from "../src/components/chapter-content";
-import { getAllChapters, getChapterBySlug } from "../src/lib/markdown";
+import { notFound } from 'next/navigation';
+import ChapterContent from '../components/chapter-content';
+import { getAllChapters, getChapterBySlug } from '../lib/markdown';
 
 export default function Home() {
   const chapters = getAllChapters();
