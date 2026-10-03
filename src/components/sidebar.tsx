@@ -24,7 +24,7 @@ function ChapterLinks({
             aria-current={isActive ? 'page' : undefined}
             className={`block rounded-md px-3 py-2 text-sm font-medium transition-colors ${
               isActive
-                ? 'bg-sky-600 text-white'
+                ? 'bg-slate-800 text-white ring-1 ring-inset ring-slate-700'
                 : 'text-slate-300 hover:bg-slate-800 hover:text-white'
             }`}
           >
@@ -59,7 +59,7 @@ export default function Sidebar({
           <ChapterLinks chapters={chapters} currentSlug={currentSlug} />
         </div>
       </details>
-      <aside className="hidden h-full w-72 shrink-0 overflow-y-auto overscroll-contain border-r border-slate-800 bg-slate-900 p-4 text-slate-200 md:block">
+      <aside className="hidden h-full w-80 shrink-0 overflow-y-auto overscroll-contain border-r border-slate-800 bg-slate-900 p-4 text-slate-200 md:block">
         <div className="mb-2 px-2 text-xs font-semibold uppercase tracking-wider text-slate-500">
           Daftar Isi
         </div>

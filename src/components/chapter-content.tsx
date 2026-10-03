@@ -6,7 +6,7 @@ import Link from "next/link";
 import "highlight.js/styles/github-dark.css";
 import Navbar from "./navbar";
 import Sidebar from "./sidebar";
-import type { Chapter } from "../lib/markdown";
+import { getChapterSearchIndex, type Chapter } from "../lib/markdown";
 
 type ChapterMeta = Omit<Chapter, "content">;
 
@@ -26,7 +26,7 @@ export default function ChapterContent({
 
   return (
     <div className="flex h-dvh flex-col overflow-hidden bg-slate-950 text-slate-100">
-      <Navbar currentTitle={chapter.title} />
+      <Navbar searchItems={getChapterSearchIndex()} />
       <div className="flex min-h-0 flex-1 flex-col md:flex-row">
         <Sidebar chapters={chapters} currentSlug={chapter.slug} />
         <main className="min-h-0 min-w-0 flex-1 overflow-y-auto overscroll-contain">

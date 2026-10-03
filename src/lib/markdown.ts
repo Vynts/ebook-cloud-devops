@@ -11,6 +11,8 @@ export interface Chapter {
   content: string;
 }
 
+export type ChapterSearchItem = Pick<Chapter, 'slug' | 'title' | 'content'>;
+
 type ChapterFile = Chapter & { fullPath: string };
 
 function slugifyTitle(title: string): string {
@@ -75,6 +77,14 @@ export function getAllChapters(): Omit<Chapter, 'content'>[] {
     slug,
     title,
     order,
+  }));
+}
+
+export function getChapterSearchIndex(): ChapterSearchItem[] {
+  return getChapterFiles().map(({ slug, title, content }) => ({
+    slug,
+    title,
+    content,
   }));
 }
 
