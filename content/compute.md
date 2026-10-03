@@ -23,14 +23,14 @@ Bayangkan Kita butuh laptop canggih untuk mengedit video berat, tapi Kita tidak 
 
 Untuk memahami dua istilah ini, mari gunakan **Analogi Gedung Apartemen**:
 
-### A. Virtual Machine (VM) — *Unit Apartemen*
+### A. Virtual Machine (VM) - *Unit Apartemen*
 Bayangkan ada satu **Gedung Raksasa** (Komputer Fisik besar). Di dalam gedung ini, ruangan-ruangannya disekat menjadi puluhan **Unit Apartemen kecil**.
 * Setiap unit punya pintu kunci sendiri, kamar mandi sendiri, dan listrik sendiri.
 * Penghuni Kamar 101 tidak bisa mengintip atau mengganggu isi Kamar 102.
 
 **Virtual Machine (VM)** adalah unit apartemen tersebut. VM adalah **komputer buatan (komputer dalam komputer)** yang terisolasi aman dan punya sistem operasinya sendiri (seperti Windows atau Linux).
 
-### B. AWS EC2 — *Layanan Rental Apartemen Fleksibel*
+### B. AWS EC2 - *Layanan Rental Apartemen Fleksibel*
 **EC2 (Elastic Compute Cloud)** adalah nama produk buatan Amazon (AWS). Ini adalah layanan tempat Kita bisa menyewa unit VM tadi secara online.
 
 Kenapa dinamakan **"Elastic" (Elastis)**?
@@ -51,19 +51,7 @@ Tugas Manajer Gedung (Hypervisor) ini adalah:
 
 Bayangkan Kita mau membuka **Toko Baju Online** di dalam unit apartemen yang sudah disewa. Supaya pembeli dari luar bisa belanja, Kita butuh 3 hal:
 
-```
-[ Pengunjung Internet ]
-         │
-         │ (Ketik Alamat/URL)
-         ▼
-[ Alamat Rumah / IP Address ]
-         │
-         ▼
-[ Penjaga Toko / Web Server (Nginx) ]
-         │
-         ▼
-[ Rak Baju & Etalase / File Website (EBS Storage) ]
-```
+![Diagram cara kerja website di EC2 atau VM](/images/cara-kerja-web.png)
 
 1. **Gudang / Rak (Storage AWS EBS):** Tempat Kita menyimpan file website Kita (file HTML, foto produk, kode program). Ini seperti Harddisk virtual.
 2. **Penjaga Toko (Web Server seperti Nginx/Apache):** Program yang bertugas menyambut pengunjung. Saat ada yang mengetik alamat website Kita, si penjaga toko ini yang akan mengambilkan file foto/halaman web dan menampilkannya di layar HP/komputer pengunjung.
@@ -91,12 +79,7 @@ AWS membuat sepasang kunci saat Kita membuat EC2:
 * **Public Key (Gembok):** Dipasang di pintu apartemen server Kita.
 * **Private Key (Kunci Rahasia / File `.pem`):** Disimpan di laptop lokal Kita. Jangan sampai hilang atau dicuri orang!
 
-```
-[ Laptop Kita ]                             [ Server EC2 di Cloud ]
-(Punya Kunci .pem) ── Coba Masuk SSH ──> (Memiliki Gembok Match)
-                                                   │
-                                            [ Akses Diterima! ]
-```
+![Diagram cara kerja SSH di EC2 atau VM](/images/cara-kerja-ssh.png)
 
 ### Langkah Praktis Menggunakan SSH (Step-by-Step):
 
@@ -131,16 +114,7 @@ Kita bisa mengetik perintah untuk menginstall aplikasi, meng-copy kode website, 
 
 Untuk melihat gambaran utuhnya, mari gabungkan semua komponen di atas dalam **satu alur cerita perjalanan dari awal sampai akhir**:
 
-```
-[ LAPTOP Kita ]  ── SSH (Akses Remote / Pengelolaan) ──>  [ AWS EC2 / VM ]
-                                                          ├── Hypervisor (Pengelola Fisik)
-                                                          ├── EBS Storage (File Web)
-                                                          ├── Nginx (Penjaga Toko)
-                                                          └── Systemd (Robot 24/7)
-                                                                  ▲
-                                                                  │ Request Website (HTTP/HTTPS)
-[ PENGUNJUNG INTERNET ] ── Ketik Domain/IP Address ───────────────┘
-```
+![Diagram cara kerja Big Picture di EC2 atau VM](/images/cara-kerja-internet.png)
 
 ### Skenario Lengkap:
 

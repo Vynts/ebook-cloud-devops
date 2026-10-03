@@ -1,13 +1,22 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar({ currentTitle }: { currentTitle: string }) {
   return (
     <header className="z-10 flex h-14 shrink-0 items-center justify-between gap-3 border-b border-slate-800 bg-slate-950 px-3 sm:h-16 sm:gap-4 sm:px-6">
       <Link
         href="/"
-        className="min-w-0 truncate text-sm font-bold text-sky-400 sm:text-lg"
+        className="flex min-w-0 items-center gap-2 text-sm font-bold sm:gap-3 sm:text-lg"
       >
-        Dasar Cloud Computing &amp; DevOps
+        <Image
+          src="/images/icons.png"
+          alt=""
+          width={32}
+          height={32}
+          aria-hidden="true"
+          className="h-6 w-6 shrink-0 object-contain sm:h-8 sm:w-8"
+        />
+        <span className="truncate">Dasar Cloud Computing &amp; DevOps</span>
       </Link>
       <nav
         aria-label="Navigasi utama"

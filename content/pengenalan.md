@@ -4,6 +4,7 @@ description: "Panduan lengkap memahami Cloud Infrastructure (AWS) dan Perintah D
 order: 1
 author: "vynts"
 github: "https://github.com/vynts"
+donation: "https://tako.id/nfasvin"
 ---
 
 # Pengenalan Cloud Computing, Konsep Dasar Linux
@@ -16,8 +17,15 @@ Website/ebook tutorial dan Pengenalan Konsep Cloud Computing ini cocok untuk pem
 
 Download Pdf : Link Belum Tersedia
 
+# Dukung Project Ini ☕
+
+Ebook/panduan ini dibuat dan dibagikan secara **gratis** untuk membantu siapa saja yang ingin belajar Cloud Computing dan Linux. Karena penulis saat ini belum berpenghasilan, dukungan dan apresiasi dari Anda akan sangat berarti untuk membantu keberlangsungan project ini serta pengembangan materi-materi gratis lainnya.
+
+Jika materi ini bermanfaat, Anda bisa memberikan dukungan melalui:
+👉 **[Dukung / Traktir Kopi di Tako.id](https://tako.id/nfasvin)**
+
+Terima kasih banyak atas setiap dukungan yang Anda berikan!
+
 # Author & Maintainer
 
 Ebook ini dibuat oleh Alvinza Erza Farandhika. Untuk pertanyaan, kritik, dan saran, silakan drop email ke erzafarandhika@gmail.com.
-
-

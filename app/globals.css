@@ -111,6 +111,12 @@ body {
   text-underline-offset: 0.2em;
 }
 
+.markdown-content .chapter-navigation a,
+.markdown-content .chapter-navigation a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .markdown-content code {
   overflow-wrap: anywhere;
 }

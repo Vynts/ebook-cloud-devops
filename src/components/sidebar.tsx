@@ -59,7 +59,7 @@ export default function Sidebar({
           <ChapterLinks chapters={chapters} currentSlug={currentSlug} />
         </div>
       </details>
-      <aside className="hidden h-full w-64 shrink-0 overflow-y-auto overscroll-contain border-r border-slate-800 bg-slate-900 p-4 text-slate-200 md:block">
+      <aside className="hidden h-full w-72 shrink-0 overflow-y-auto overscroll-contain border-r border-slate-800 bg-slate-900 p-4 text-slate-200 md:block">
         <div className="mb-2 px-2 text-xs font-semibold uppercase tracking-wider text-slate-500">
           Daftar Isi
         </div>

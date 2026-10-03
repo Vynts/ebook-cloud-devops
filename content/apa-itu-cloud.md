@@ -24,7 +24,7 @@ Sebelum ada teknologi Cloud, perusahaan harus membangun **Data Center** sendiri 
 | **Modal Awal** | Sangat besar (Beli fisik komputer, AC pendingin, tempat aman). | Tanpa modal awal (Sistem sewa bulanan/per detik). |
 | **Kemudahan Tambah Kapasitas** | Sulit dan lama (Harus pesan toko, tunggu kirim, pasang kabel). | Sangat cepat (Cukup klik tombol, selesai dalam hitungan detik). |
 | **Perawatan Hardware** | Harus diperbaiki sendiri jika ada kerusakan komponen. | Sepenuhnya diurus oleh penyedia layanan Cloud. |
-| **Cadangan Data (Backup)** | Butuh biaya gKita dan lokasi fisik terpisah. | Sudah tersedia fitur cadangan otomatis di berbagai negara. |
+| **Cadangan Data (Backup)** | Butuh biaya ganda dan lokasi fisik terpisah. | Sudah tersedia fitur cadangan otomatis di berbagai negara. |
 
 
 ## 3 Jenis Layanan Cloud (IaaS, PaaS, SaaS)
