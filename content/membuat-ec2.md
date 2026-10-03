@@ -139,12 +139,6 @@ Jika berhasil, prompt terminal akan berubah menjadi prompt server Ubuntu:
 ubuntu@ip-172-31-0-1:~$
 ```
 
-Jalankan Command ini agar server ter update dan bisa dijalankan:
-
-```bash
-sudo apt update && sudo apt upgrade
-```
-
 ![SSH Success Terminal](/images/ubuntu.png)
 
 ---
