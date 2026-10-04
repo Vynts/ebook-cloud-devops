@@ -1,6 +1,6 @@
 ---
 title: "3. Menginstall Web Server"
-description: "Panduan lengkap memahami Cloud Infrastructure (AWS) dan Perintah Dasar Linux untuk Awam & Pemula."
+description: "Pelajari cara memasang Nginx di AWS EC2 dan mengatur Security Group agar web server dapat diakses dari internet."
 order: 6
 author: "vynts"
 github: "https://github.com/vynts"

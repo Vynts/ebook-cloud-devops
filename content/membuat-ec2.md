@@ -1,6 +1,6 @@
 ---
 title: "2. Mencoba membuat EC2 Instance"
-description: "Panduan lengkap memahami Cloud Infrastructure (AWS) dan Perintah Dasar Linux untuk Awam & Pemula."
+description: "Ikuti langkah membuat AWS EC2, menyiapkan SSH Key Pair dan Security Group, lalu menghubungkan virtual server ke terminal."
 order: 6
 author: "vynts"
 github: "https://github.com/vynts"

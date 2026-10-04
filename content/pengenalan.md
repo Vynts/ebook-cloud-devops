@@ -1,6 +1,6 @@
 ---
 title: "Pengenalan Cloud Computing"
-description: "Panduan lengkap memahami Cloud Infrastructure (AWS) dan Perintah Dasar Linux untuk Awam & Pemula."
+description: "Mulai belajar cloud computing, Linux, dan AWS lewat ebook gratis berbahasa Indonesia. Pahami konsep dasar cloud dan langkah awal untuk pemula."
 order: 1
 author: "vynts"
 github: "https://github.com/vynts"

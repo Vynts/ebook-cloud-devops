@@ -1,6 +1,6 @@
 ---
 title: "Lisensi & Distribusi"
-description: "Panduan lengkap memahami Cloud Infrastructure (AWS) dan Perintah Dasar Linux untuk Awam & Pemula."
+description: "Pelajari ketentuan penggunaan, atribusi, dan distribusi ebook Cloud Computing dan Linux gratis ini sebelum membagikan atau mengadaptasi materinya."
 order: 3
 author: "vynts"
 github: "https://github.com/vynts"

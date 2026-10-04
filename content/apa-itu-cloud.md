@@ -1,6 +1,6 @@
 ---
 title: "Apa itu Cloud Computing"
-description: "Panduan lengkap memahami Cloud Infrastructure (AWS) dan Perintah Dasar Linux untuk Awam & Pemula."
+description: "Kenali cara kerja cloud computing, perbedaan cloud dan server sendiri, serta layanan IaaS, PaaS, dan SaaS melalui analogi sederhana."
 order: 4
 author: "vynts"
 github: "https://github.com/vynts"

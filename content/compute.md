@@ -1,6 +1,6 @@
 ---
 title: "1. Compute"
-description: "Panduan lengkap memahami Cloud Infrastructure (AWS) dan Perintah Dasar Linux untuk Awam & Pemula."
+description: "Pahami cloud compute, virtual machine, AWS EC2, dan koneksi SSH dengan analogi sederhana dalam panduan cloud computing untuk pemula."
 order: 5
 author: "vynts"
 github: "https://github.com/vynts"

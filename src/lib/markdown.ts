@@ -7,6 +7,7 @@ const contentDirectory = path.join(process.cwd(), 'content');
 export interface Chapter {
   slug: string;
   title: string;
+  description: string;
   order: number;
   content: string;
 }
@@ -50,11 +51,14 @@ function readChapterFile(fileName: string): ChapterFile {
       : customOrder
         ? Number(customOrder[1])
         : 99;
+  const description =
+    typeof data.description === 'string' ? data.description.trim() : '';
 
   return {
     fullPath,
     slug: slugifyTitle(title),
     title,
+    description,
     order,
     content,
   };
@@ -73,9 +77,10 @@ function getChapterFiles(): ChapterFile[] {
 }
 
 export function getAllChapters(): Omit<Chapter, 'content'>[] {
-  return getChapterFiles().map(({ slug, title, order }) => ({
+  return getChapterFiles().map(({ slug, title, description, order }) => ({
     slug,
     title,
+    description,
     order,
   }));
 }
@@ -97,6 +102,7 @@ export function getChapterBySlug(slug: string): Chapter | null {
   return {
     slug: chapterFile.slug,
     title: chapterFile.title,
+    description: chapterFile.description,
     order: chapterFile.order,
     content: chapterFile.content,
   };
